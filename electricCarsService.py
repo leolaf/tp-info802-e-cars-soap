@@ -4,6 +4,7 @@ from spyne.server.wsgi import WsgiApplication
 from wsgiref.simple_server import make_server
 from spyne.protocol.json import JsonDocument
 import json
+import os
 
 class CarList(ServiceBase):
 	@rpc(_returns=AnyDict)
@@ -50,5 +51,7 @@ application = Application([CarList], 'spyne.examples.hello.soap',
 
 wsgi_application = WsgiApplication(application)
 
-server = make_server('127.0.0.1', 8000, wsgi_application)
+port = int(os.environ.get('PORT',8000))
+
+server = make_server('0.0.0.0', port, wsgi_application)
 server.serve_forever()
