@@ -15,32 +15,32 @@ class CarList(ServiceBase):
 						{
 							"brand" : "Renault",
 							"model" : "Zoé",
-							"batteryTank" : 300,
-							"consumption" : 1.2
+							"autonomy" : 300,
+							"chargeTime" : 70
 						},
 						{
 							"brand" : "Citroen",
 							"model" : "Pe-casso",
-							"batteryTank" : 410,
-							"consumption" : 1.8
+							"autonomy" : 410,
+							"chargeTime" : 80
 						},
 						{
 							"brand" : "Nissan",
 							"model" : "GTHix",
-							"batteryTank" : 500,
-							"consumption" : 2.3
+							"autonomy" : 500,
+							"chargeTime" : 90
 						},
 						{
 							"brand" : "Renault",
 							"model" : "Twizzy",
-							"batteryTank" : 240,
-							"consumption" : 1.0
+							"autonomy" : 240,
+							"chargeTime" : 45
 						},
 						{
 							"brand" : "BMW",
 							"model" : "E1",
-							"batteryTank" : 400,
-							"consumption" : 2.0
+							"autonomy" : 400,
+							"chargeTime" : 35
 						}
 					]
 				}
